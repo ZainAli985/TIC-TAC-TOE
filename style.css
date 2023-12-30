@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    margin-top: 4rem;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #ffffc7; 
+    font-size: 5vmin;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hide{
+    display: none;
+}
+#main-heading{
+    margin-top: 2rem;
+}
+
+
+/* RESPONSIVE DESIGN  */
+
+@media screen and (max-width: 1260px)  {
+
+        .container{
+            height: 65vmin;
+        }
+        .game{
+            margin-top: 0rem;
+        }
+
+        #reset-btn{
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+    
+}
+@media screen and (max-width: 600px)  {
+    .msg-container{
+        gap: 1.5rem;
+    }
+        #msg{
+            font-size: 6vmin;
+        }
+        #main-heading{
+        font-size: 1rem;
+        }
+        .container{
+        height: 56vmin;
+        }
+        .box{
+            height: 15vmin;
+            width: 15vmin;
+        }
+        .game{
+            margin-top: 0rem;
+            align-content: center;
+        }
+
+        #reset-btn{
+            margin-top: 0rem;
+            font-size: 1rem;
+            padding:0.8rem ;
+        }
+        #new-btn {
+            font-size: 1rem;
+            padding: 0.7rem;
+            border-radius: 0.6rem;
+        }
+    
+}
+
+@media screen and (max-width: 422px ) {
+    #msg{
+        font-size: 7vmin;
+    }
+    .msg-container{
+        gap: 1rem;
+    }
+    #new-btn{
+        font-size: 0.6rem;
+        padding: 0.5rem ;
+        border-radius: 0.5rem;
+     }
+    #main-heading{
+        font-size: 1rem;
+        }
+        .container{
+        height: 56vmin;
+        }
+        .box{
+            height: 15vmin;
+            width: 15vmin;
+        }
+        .game{
+            margin-top: 0rem;
+            align-content: center;
+            height: 60vmin;
+        width: 60vmin;
+        }
+
+        #reset-btn {
+            margin-top: 0rem;
+            font-size: 0.6rem;
+            padding: 0.5rem;
+            text-align: center;
+            border-radius: 0.7rem;
+        }
+        .box{
+            border-radius: 0.8rem;
+        }
+}
